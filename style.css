@@ -1,0 +1,287 @@
+/*   
+Theme Name: Chantha Theme
+Theme URI: http://kooms.info
+Description: Chantha theme is wordpress theme created by sophy -- WordPress v3.1.1
+Author: Prak Sophy
+Author URI: http://kooms.info
+Version: 1.0
+*/
+
+/*
+*
+* Meyerweb.com reset style(compress reset)
+*
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+/**
+* Global
+*/
+span.ranquo{
+    color: #FF7F27;
+}
+a {text-decoration: none; color: #2F53FF}
+a:hover{text-decoration: underline}
+/**
+* Layout
+----------------*/
+body{
+    background: url(images/bg.jpg) repeat;
+    font-family: 'Hanuman', Arial, Serif,sans-serif;
+    line-height: 1.3;
+}
+#header{
+    height: 35px;
+    background: #FF7F27;
+   border-bottom: 1px solid #fff;
+}
+#header-bottom{
+    width: 100%;
+    border-top: 1px solid #ff7f27;
+}
+#nav, #page-wrap{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+#home{
+     margin-top: 25px;
+}
+/**
+* Nav
+*/
+#nav .pic-logo{
+    position: absolute;
+    right: 100%;
+    top: -5px;
+    height: 77px;
+    width: 72px;
+    background: #fff;
+    border: 1px solid #ff7f27;
+    -webekit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -border-radius: 4px;
+    -webkit-box-shadow:1px 1px 6px #999;
+    -moz-box-shadow:1px 1px 6px #999;
+     box-shadow:1px 1px 6px #999;
+}
+
+#nav .pic-logo img{
+    border: 1px solid #fff;
+    -webekit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+     
+}
+#nav .about-me{
+    position: absolute;
+    left: -140px;
+    top: 80px;
+    width: 180px;
+    background: #fff;
+    font-size: 0.9em;
+    padding: 10px;
+    -webkit-box-shadow:1px 1px 6px #999;
+    -moz-box-shadow:1px 1px 6px #999;
+     box-shadow:1px 1px 6px #999;
+     border: 1px solid #ccc;
+     display: none;
+}
+#nav .about-me a{
+    color: #2F53FF;
+    text-decoration: none;
+}
+#nav .about-me a:hover{
+    text-decoration: underline;
+}
+#nav .nav-menu{
+    margin-top: 4px;
+    float: right;
+}
+#nav .nav-menu ul li{
+    float: left;
+}
+#nav .nav-menu ul li a{
+    color: #f5f5f5;
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'hanuman', arial,serif;
+    margin-right: 2px;
+}
+#nav .nav-menu ul li a:hover,
+#nav .nav-menu ul li a.active{
+  background: rgba(200, 54, 54, 0.6);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  color: #fff;
+}
+
+
+/*
+* Content
+-------------------*/
+/* home slide */
+#wrap-slider{
+
+     background:#fff;
+     margin: 0 auto 60px auto;
+     border:1px solid #d7d7d7;
+     -moz-border-radius:4px;
+     -webkit-border-radius:4px;
+     border-radius:4px; padding:0;
+     -webkit-box-shadow:1px 1px 6px #ddd;
+     -moz-box-shadow:1px 1px 6px #ddd;
+     box-shadow:1px 1px 6px #ddd;
+     height:246px;
+     padding: 10px;
+     width:618px;
+}
+#slider {
+    position:relative;
+    width:618px;
+    height:246px;
+    background:url(images/loading.gif) no-repeat 50% 50%;
+    
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	left:260px;
+	bottom:-42px;
+}
+.nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url(images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a {
+    color:#efe9d1;
+    text-decoration:underline;
+}
+.clear {
+	clear:both;
+}
+
+/******************
+* Home Content
+*******************/
+#content{
+    overflow: hidden;
+}
+#content .grid_1,
+#content .grid_2,
+#content .grid_3,
+#content .grid_4{
+    width: 202px;
+    margin: 10px 5px;
+    float: left;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+
+}
+#content .grid_1 h2,
+#content .grid_2 h2,
+#content .grid_3 h2,
+#content .grid_4 h2{
+    margin-bottom: 10px;
+    color: #FF7F27;
+}
+#content .grid_1 h2 a,
+#content .grid_2 h2 a,
+#content .grid_3 h2 a,
+#content .grid_4 h2 a{
+    text-decoration:  none;
+    color: #2F53FF;
+}
+#content .grid_1 h2 a:hover,
+#content .grid_2 h2 a:hover,
+#content .grid_3 h2 a:hover,
+#content .grid_4 h2 a:hover{
+    text-decoration: underline;
+}
+#content .grid_1 img,
+#content .grid_2 img,
+#content .grid_3 img,
+#content .grid_4 img{
+    border: 1px solid #ccc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+/**
+* Footer
+**/
+
+#footer{
+  font-size: 0.85em;
+  position: relative;
+  padding: 10px 15px;
+  color: #666;
+}
+#footer .copyright{
+    position: absolute;
+    left: 0;
+    width: 40%;
+    bottom: 0;
+}
+#footer .theme-author{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    text-align: right;
+    bottom: 0;
+}
+
